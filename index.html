@@ -709,13 +709,16 @@
                 });
             });
         </script>
-        <script>
-  document.querySelectorAll('.nav-item.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      $('#navbarCollapse').collapse('hide');
+         <script>
+  $(document).ready(function () {
+    $('.navbar-nav .nav-link').on('click', function () {
+      // Collapse the navbar only if it's open
+      if ($('.navbar-collapse').hasClass('show')) {
+        $('.navbar-collapse').collapse('hide');
+      }
     });
   });
-      </script>
+</script>
 
           
         
