@@ -225,7 +225,7 @@ a:focus {
     .navbar .navbar-toggler {
         display: block !important;
         position: absolute;
-        top: 15px;
+        top: 10px;
         left: 15px; /* Move hamburger to the left */
         z-index: 10001;
     }
@@ -236,7 +236,7 @@ a:focus {
     }
 
     .navbar .navbar-brand {
-        margin-left: 70px; /* Push brand to the right */
+        margin-left: 100px; /* Push brand to the right */
         color: #EF233C;
     }
 
