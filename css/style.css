@@ -218,14 +218,16 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         position: relative;
-        padding: 15px 60px 15px 15px; /* Right padding to keep hamburger visible */
+        padding: 15px 15px 15px 15px; /* Add some space to the left and right */
         background: #ffffff !important;
     }
 
     .navbar.nav-sticky {
         position: fixed;
         top: 0;
-        padding: 10px 60px 10px 15px; /* Same idea here */
+        left: 0;
+        right: 0;
+        padding: 10px 15px; /* Keep enough space for the toggler */
         background: #ffffff !important;
         z-index: 9999;
     }
@@ -234,13 +236,18 @@ a:focus {
         display: block !important;
         position: absolute;
         top: 15px;
-        right: 15px; /* 👈 Stay right, but inside screen */
+        right: 15px; /* Positioning from the right edge */
         z-index: 10001;
     }
 
     .navbar.nav-sticky .navbar-toggler {
         top: 10px;
-        right: 15px !important; /* 👈 Ensure it's still in view */
+        right: 15px !important; /* Ensures it stays on the right */
+    }
+
+    /* To prevent overflow when navbar is sticky */
+    .navbar .navbar-toggler-icon {
+        max-width: calc(100% - 30px); /* Prevents the icon from going out of the screen */
     }
 
     .navbar .navbar-brand {
@@ -259,6 +266,7 @@ a:focus {
         box-shadow: none;
     }
 }
+
 
 
 /*******************************/
