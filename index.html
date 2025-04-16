@@ -50,9 +50,7 @@
                         
                         <a href="#contact" class="nav-item nav-link">Contact</a>
 			<!-- Close button at the top-right inside the dropdown -->
-<div class="d-flex justify-content-end d-lg-none w-100">
-    <button class="btn text-danger" id="menuClose" style="font-size: 2rem; margin-top: 0.5rem; margin-right: 1rem;">&times;</button>
-</div>
+
 
                     </div>
                 </div>
@@ -714,23 +712,6 @@
                 });
             });
         </script>
-         <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Close button action
-    document.getElementById("menuClose").addEventListener("click", function () {
-      $('#navbarCollapse').collapse('hide');
-    });
-
-    // Auto-close dropdown on nav item click (mobile only)
-    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-    navLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        if (window.innerWidth < 992) {
-          $('#navbarCollapse').collapse('hide');
-        }
-      });
-    });
-  });
-</script>   
+        
     </body>
 </html>
