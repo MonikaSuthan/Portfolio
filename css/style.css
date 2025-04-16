@@ -243,7 +243,7 @@ a:focus {
         display: block !important; 
         position: absolute;
         top: 15px;
-        right: 15px; /* Adjust this to move it into view */
+        right: 30px; /* Adjust this to move it into view */
         z-index: 10000;
     }
 
