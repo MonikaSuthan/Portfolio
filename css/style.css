@@ -238,17 +238,7 @@ a:focus {
     .navbar .dropdown-menu {
         box-shadow: none;
     
-    }
-    
-    .navbar-toggler {
-        display: block !important; 
-        position: absolute;
-        top: 15px;
-        right: 15px; /* Adjust this to move it into view */
-        z-index: 1;
-    }
-
-    
+    }  
 }
 
 
