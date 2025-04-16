@@ -709,7 +709,14 @@
                 });
             });
         </script>
-        
+        <script>
+  document.querySelectorAll('.nav-item.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      $('#navbarCollapse').collapse('hide');
+    });
+  });
+      </script>
+
           
         
     </body>
