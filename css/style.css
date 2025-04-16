@@ -216,29 +216,50 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {   
-     .navbar {
-         position: relative;
-         padding: 15px 15px 15px 60px;
+    .navbar {
+        position: relative;
+        padding: 15px 60px 15px 15px; /* Right padding to keep hamburger visible */
         background: #ffffff !important;
     }
-    
+
+    .navbar.nav-sticky {
+        position: fixed;
+        top: 0;
+        padding: 10px 60px 10px 15px; /* Same idea here */
+        background: #ffffff !important;
+        z-index: 9999;
+    }
+
+    .navbar .navbar-toggler {
+        display: block !important;
+        position: absolute;
+        top: 15px;
+        right: 15px; /* 👈 Stay right, but inside screen */
+        z-index: 10001;
+    }
+
+    .navbar.nav-sticky .navbar-toggler {
+        top: 10px;
+        right: 15px !important; /* 👈 Ensure it's still in view */
+    }
+
     .navbar .navbar-brand {
         color: #EF233C;
     }
-    
+
     .navbar .navbar-nav {
         margin-top: 15px;
     }
-    
+
     .navbar a.nav-link {
         padding: 5px;
     }
-    
+
     .navbar .dropdown-menu {
         box-shadow: none;
     }
-
 }
+
 
 /*******************************/
 /********** Hero CSS ***********/
