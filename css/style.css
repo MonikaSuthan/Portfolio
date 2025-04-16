@@ -1286,7 +1286,7 @@ a:focus {
 
 #contactForm .form-control {
     max-width: 650px;
-    width: 200%;
+    width: 100%;
 }
 .contact .contact-form {
     position: relative;
