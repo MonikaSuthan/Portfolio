@@ -215,41 +215,44 @@ a:focus {
     }
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 991.98px) {
+    /* Make sure navbar width is 100% and doesn’t overflow */
     .navbar {
         position: relative;
-        padding: 15px 15px 15px 15px; /* Add some space to the left and right */
+        width: 100%;
+        padding: 15px 15px 15px 15px; /* Padding all around */
         background: #ffffff !important;
+        box-sizing: border-box; /* Prevents overflow */
     }
 
+    /* Sticky navbar stays within the viewport */
     .navbar.nav-sticky {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        padding: 10px 15px; /* Keep enough space for the toggler */
+        width: 100%;
+        padding: 10px 15px; /* Padding to keep space for toggler */
         background: #ffffff !important;
         z-index: 9999;
+        box-sizing: border-box; /* Ensures it doesn't overflow */
     }
 
+    /* Position the hamburger icon on the right */
     .navbar .navbar-toggler {
         display: block !important;
         position: absolute;
         top: 15px;
-        right: 15px; /* Positioning from the right edge */
+        right: 15px; /* Right-aligned */
         z-index: 10001;
     }
 
-    .navbar.nav-sticky .navbar-toggler {
-        top: 10px;
-        right: 15px !important; /* Ensures it stays on the right */
-    }
-
-    /* To prevent overflow when navbar is sticky */
+    /* Ensure the icon doesn’t move out of the screen */
     .navbar .navbar-toggler-icon {
-        max-width: calc(100% - 30px); /* Prevents the icon from going out of the screen */
+        max-width: 30px; /* Adjust icon size if needed */
     }
 
+    /* Navbar brand styling */
     .navbar .navbar-brand {
         color: #EF233C;
     }
@@ -266,7 +269,6 @@ a:focus {
         box-shadow: none;
     }
 }
-
 
 
 /*******************************/
