@@ -214,61 +214,36 @@ a:focus {
         color: #EF233C;
     }
 }
-
-@media (max-width: 991.98px) {
-    /* Make sure navbar width is 100% and doesn’t overflow */
+@media (max-width: 991.98px) {   
     .navbar {
-        position: relative;
-        width: 100%;
-        padding: 15px 15px 15px 15px; /* Padding all around */
-        background: #ffffff !important;
-        box-sizing: border-box; /* Prevents overflow */
-    }
-
-    /* Sticky navbar stays within the viewport */
-    .navbar.nav-sticky {
-        position: fixed;
+        position: fixed; /* Keep the navbar fixed at the top */
         top: 0;
         left: 0;
         right: 0;
-        width: 100%;
-        padding: 10px 15px; /* Padding to keep space for toggler */
+        width: 100%; /* Ensure the navbar doesn't overflow */
+        padding: 15px; 
         background: #ffffff !important;
-        z-index: 9999;
-        box-sizing: border-box; /* Ensures it doesn't overflow */
+        z-index: 9999; /* Keep navbar above other content */
+        box-sizing: border-box; /* Prevent overflow */
     }
-
-    /* Position the hamburger icon on the right */
-    .navbar .navbar-toggler {
-        display: block !important;
-        position: absolute;
-        top: 15px;
-        right: 15px; /* Right-aligned */
-        z-index: 10001;
-    }
-
-    /* Ensure the icon doesn’t move out of the screen */
-    .navbar .navbar-toggler-icon {
-        max-width: 30px; /* Adjust icon size if needed */
-    }
-
-    /* Navbar brand styling */
+    
     .navbar .navbar-brand {
         color: #EF233C;
     }
-
+    
     .navbar .navbar-nav {
         margin-top: 15px;
     }
-
+    
     .navbar a.nav-link {
         padding: 5px;
     }
-
+    
     .navbar .dropdown-menu {
         box-shadow: none;
     }
 }
+
 
 
 /*******************************/
