@@ -218,7 +218,7 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         position: relative;
-        padding: 15px 15px 15px 60px; /* Left padding for hamburger space */
+        padding: 20px 20px 20px 60px; /* Left padding for hamburger space */
         background: #ffffff !important;
     }
 
