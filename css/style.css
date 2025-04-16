@@ -179,7 +179,8 @@ a:focus {
     }
     
     .navbar.nav-sticky {
-        padding: 10px 60px;
+        right: 15px !important; /* Reposition on scroll */
+        top: 10px !important;
         background: #ffffff !important;
     }
     
