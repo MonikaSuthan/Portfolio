@@ -245,12 +245,7 @@ a:focus {
         z-index: 10; /* Ensure it's above other content */
     }
 
-    /* Optional: Adjust icon size and other styling */
-    .navbar-toggler-icon {
-        width: 30px;
-        height: 20px;
-        background-color: #EF233C; /* Change color if needed */
-    }
+    
 }
 
 
