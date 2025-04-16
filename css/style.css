@@ -179,8 +179,7 @@ a:focus {
     }
     
     .navbar.nav-sticky {
-        right: 15px !important; /* Reposition on scroll */
-        top: 10px !important;
+        padding: 10px 60px;
         background: #ffffff !important;
     }
     
@@ -218,28 +217,41 @@ a:focus {
 
 @media (max-width: 991.98px) {   
     .navbar {
-       padding: 15px;
-       background: #ffffff !important;
+        position: relative;
+        padding: 15px 15px 15px 60px; /* Left padding for hamburger space */
+        background: #ffffff !important;
     }
-    
+
+    .navbar .navbar-toggler {
+        display: block !important;
+        position: absolute;
+        top: 15px;
+        left: 15px; /* Move hamburger to the left */
+        z-index: 10001;
+    }
+
+    .navbar.nav-sticky .navbar-toggler {
+        left: 15px !important;
+        top: 10px !important;
+    }
+
     .navbar .navbar-brand {
+        margin-left: 50px; /* Push brand to the right */
         color: #EF233C;
     }
-    
+
     .navbar .navbar-nav {
         margin-top: 15px;
     }
-    
+
     .navbar a.nav-link {
         padding: 5px;
     }
-    
+
     .navbar .dropdown-menu {
         box-shadow: none;
-    
-    }  
+    }
 }
-
 
 /*******************************/
 /********** Hero CSS ***********/
